@@ -1,0 +1,36 @@
+{
+  "name": "openai-discord-bot",
+  "version": "1.4.4",
+  "description": "OpenAI discord bot",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "node index.js",
+    "docker": "docker build -t openai-discord-bot . && docker run -d openai-discord-bot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osman-koc/openai-discord-bot.git"
+  },
+  "keywords": [
+    "openai",
+    "discord",
+    "bot"
+  ],
+  "author": "osmankoc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osman-koc/openai-discord-bot/issues"
+  },
+  "homepage": "https://github.com/osman-koc/openai-discord-bot#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dataimageattachment": "^1.1.2",
+    "discord.js": "^12.5.3",
+    "dotenv": "^16.0.0",
+    "openai": "^2.0.5",
+    "request": "^2.88.2"
+  }
+}
