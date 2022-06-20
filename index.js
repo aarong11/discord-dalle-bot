@@ -53,7 +53,7 @@ client.on("message", async message => {
         })
     }
 
-    const result = axios.post('https://six-actors-hunt-35-241-132-117.loca.lt/dalle', {"text":`${promptWords}`,"num_images":1},
+    const result = axios.post(`${process.env.API_URL}/dalle`, {"text":`${promptWords}`,"num_images":1},
     {
         "headers": {
           "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:101.0) Gecko/20100101 Firefox/101.0",
